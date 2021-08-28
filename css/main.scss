@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: rgb(22, 21, 21);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    background-color: #2f3242;
+    padding: 10px;
+
+}
+
+.header .logo h1 {
+    color: white;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.header .logo h1 span {
+    color: blue;
+}
+
+.menu {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu div {
+    margin-left: 32px;
+}
+
+.menu div img {
+    height: 48px;
+    width: 57px;
+}
+
+.menu div i {
+    color: white;
+    font-size: 18px;
+}
+
+.menu .bell {
+    position: relative;
+}
+
+.menu .bell div {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #2196f3;
+    border-radius: 50%;
+    right: -4px;
+    top: -2px;
+}
+
+.menu .div-img {
+    display: flex;
+    align-items: center;
+}
+
+.add {
+    color: white;
+    border-radius: 30px;
+    border: 1px solid #2196f3;
+    padding: 9px 23px;
+}
+
+.add span {
+    color: #2196f3;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.parrent {
+    display: flex;
+}
+
+/* left menu */
+.column-menu {
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+    background-color: #2f3242;
+}
+
+.column-menu i {
+    color: white;
+    margin: 40px 0;
+    display: block;
+}
+
+/* left menu */
+/* header 2 */
+.header-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #2196f3;
+    height: 41px;
+}
+
+.header-2 .inbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.header-2 .inbox .icon-inbox,
+.icon-sent,
+.icon-trash {
+    display: flex;
+    margin-right: 20px;
+}
+
+.header-2 .inbox .icon-sent,
+.icon-trash {
+    color: black;
+}
+
+.header-2 .inbox .icon-inbox span,
+.icon-sent span,
+.icon-trash span {
+    margin-left: 10px;
+}
+
+.header-2 .inbox-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.header-2 .inbox-right .div-select {
+    margin: 0 10px;
+    border-radius: 15px;
+    border: 0.1px solid #FFFF;
+    padding: 0 10px;
+}
+
+.header-2 .inbox-right .div-select select {
+    width: 100px;
+    height: 30px;
+    background-color: #2196f3;
+    border: none;
+    color: white;
+    outline: none;
+}
+// conversation history
+.parent-conv-history{
+    max-width: 400px;
+    background-color: #2b2d3c;
+    padding: 20px 0;
+}
+.parent-conv-history .history {
+    padding: 20px;
+    border-bottom: 1px solid #9ca1b2;
+}
+.parent-conv-history .history .header-history{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.parent-conv-history .history .header-history .history-name{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.parent-conv-history .history .header-history:nth-child(1){
+    color: #2196f3;
+    font-family: 'Montserrat', sans-serif;
+}
+.parent-conv-history .history .header-history img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.parent-conv-history .history .div-text{
+    color: #9ca1b2;
+    font-family: 'Montserrat', sans-serif;
+}
+.parent-conv-history button{
+    color: white;
+    background-color: #2196f3;
+    width: 250px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 14px;
+    height: 39px;
+    border: none;
+}
+// conversation history
+
+.parent-chat {
+    color: wheat;
+    max-width: 700px;
+    padding: 20px;
+    background-color: #2f3242;
+}
+
+.parent-chat .received-conv {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 400px;
+}
+
+.parent-chat .received-conv img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.parent-chat .received-conv .div-text {
+    background-color: #404359;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.parent-chat .sent-conv {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    max-width: 400px;
+}
+
+.parent-chat .sent-conv img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.parent-chat .sent-conv .div-text {
+    background-color: #2196f3;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.parent-chat input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+    background: #404359;
+}
+
+// profil chat
+.personel-profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 210px;
+    background-color: #2b2d3c;
+    font-family: 'Montserrat', sans-serif;
+}
+.personel-profil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.personel-profil .img-profil{
+    position: relative;
+}
+.personel-profil .img-profil div{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    border: 1px solid #2f3242;
+    right: 19px;
+    
+}
+.personel-profil h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.personel-profil span {
+    color: #9ca1b2;
+}
+.personel-profil .div-text{
+    color: #9ca1b2;
+    margin-bottom: 20px;
+}
+.personel-profil p{
+    color: #9ca1b2;
+    margin: 0;
+}
+;.personel-profil h4 {
+    color: white;
+    margin-top: 10px;
+    font-weight: normal;
+}
+// profil chat
+
+@media (max-width: 504px) {
+    .menu div {
+        margin-left: 0px;
+        margin-right: 32px;
+
+    }
+
+    .menu .bell div {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        background-color: #2196f3;
+        border-radius: 50%;
+        right: -35px;
+        top: -2px;
+    }
+}
